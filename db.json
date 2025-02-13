@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nomUtilisateur": "Jean",
+      "email": "jean@example.com",
+      "motDePasse": "123456"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "titre": "Produit A",
+      "description": "Description du produit A",
+      "prix": 19.99,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 2,
+      "titre": "Produit B",
+      "description": "Description du produit B",
+      "prix": 29.99,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 3,
+      "titre": "Produit C",
+      "description": "Description du produit C",
+      "prix": 9.99,
+      "image": "https://via.placeholder.com/200"
+    }
+  ]
+}
