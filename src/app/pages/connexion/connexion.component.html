@@ -1,0 +1,23 @@
+<div class="container mt-3">
+  <h2>Connexion</h2>
+
+  <form [formGroup]="formConnexion" (ngSubmit)="seConnecter()">
+    <div class="mb-3">
+      <label for="email" class="form-label">Adresse e-mail</label>
+      <input type="email" id="email" class="form-control" formControlName="email" />
+    </div>
+
+    <div class="mb-3">
+      <label for="motDePasse" class="form-label">Mot de passe</label>
+      <input type="password" id="motDePasse" class="form-control" formControlName="motDePasse" />
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="formConnexion.invalid">
+      Se connecter
+    </button>
+  </form>
+
+  <p class="mt-2">
+    Pas encore inscrit ? <a routerLink="/inscription">S'inscrire</a>
+  </p>
+</div>

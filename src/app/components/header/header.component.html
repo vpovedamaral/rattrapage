@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/accueil">Mon Site Angular</a>
+    <div class="d-flex">
+      <span *ngIf="nomUtilisateur" class="navbar-text me-2">
+        Bonjour, {{ nomUtilisateur }}
+      </span>
+      <a *ngIf="!nomUtilisateur" routerLink="/connexion" class="btn btn-primary">Se connecter</a>
+    </div>
+  </div>
+</nav>
