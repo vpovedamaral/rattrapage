@@ -1,4 +1,3 @@
-// src/app/app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
@@ -13,8 +12,6 @@ import { ConnexionComponent } from './pages/connexion/connexion.component';
 import { InscriptionComponent } from './pages/inscription/inscription.component';
 import { DetailsProduitComponent } from './pages/details-produit/details-produit.component';
 
-
-// Routes de l'application
 const routes: Routes = [
   { path: '', redirectTo: 'accueil', pathMatch: 'full' },
   { path: 'accueil', component: AccueilComponent },
@@ -25,6 +22,14 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
+
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     AppComponent,
     HeaderComponent,
     FooterComponent,
@@ -33,13 +38,6 @@ const routes: Routes = [
     InscriptionComponent,
     DetailsProduitComponent
   ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes),
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
-  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
